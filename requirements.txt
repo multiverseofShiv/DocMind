@@ -12,8 +12,10 @@ redis
 tiktoken
 tenacity
 presidio-analyzer
+presidio_anonymizer
 ragas
-langfuse
+langfuse==2.53.9
 pytest
 langchain_qdrant
-
+psycopg
+slowapi

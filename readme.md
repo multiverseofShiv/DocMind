@@ -208,3 +208,12 @@ docmind/
 ## License
 
 MIT
+
+
+
+
+docker cp scripts/migrate_create_requests.sql docmind-postgres:/tmp/migrate_create_requests.sql
+docker exec -it docmind-postgres psql -U docmind -d docmind -f /tmp/migrate_create_requests.sql
+
+
+docker exec -it docmind-postgres psql -U docmind -d docmind

@@ -14,7 +14,7 @@ services:
     image: redis:7-alpine
     container_name: docmind-redis
     ports:
-      - "6379-6379"
+      - "6379:6379"
     volumes:
       - redis_data:/data
     command: ["redis-server", "--appendonly", "yes"]
@@ -30,8 +30,23 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgressql/data
+      - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
+
+
+  langfuse:
+    image: langfuse/langfuse:2
+    depends_on:
+      - postgres
+    ports:
+      - "3000:3000"
+    environment:
+      # Use the service name 'postgres' here
+      DATABASE_URL: "postgresql://docmind:docmind@postgres:5432/docmind"
+      NEXTAUTH_URL: "http://localhost:3000"
+      NEXTAUTH_SECRET: "later"
+      SALT: "later"
+      TELEMETRY_ENABLED: "false"
 
 volumes:
   qdrant_data:
