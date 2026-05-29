@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![LangChain](https://img.shields.io)
+[![Built with LangChain](https://img.shields.io/badge/Built%20with-LangChain-emerald)](https://github.com/langchain-ai/langchain)
 
 > Production-grade, multi-tenant RAG platform with hybrid retrieval, cross-encoder reranking, semantic caching, PII redaction, and full LLM observability — built to answer questions about your documents with citations and ship-ready engineering discipline.
 
