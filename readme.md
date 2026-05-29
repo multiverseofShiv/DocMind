@@ -1,9 +1,8 @@
 # DocMind 🧠
 
-![CI](https://github.com/your-username/docmind/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Lanchain](https://img.shields.io/badge/Langchain-brightgreen)
+![LangChain](https://shields.io)
 
 > Production-grade, multi-tenant RAG platform with hybrid retrieval, cross-encoder reranking, semantic caching, PII redaction, and full LLM observability — built to answer questions about your documents with citations and ship-ready engineering discipline.
 
